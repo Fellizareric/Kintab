@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabon ni Denis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://dynamic.brandcrowd.com/preview/logodraft/c47c67bd-53c5-4070-bcfa-f4eece05ae80/image/large.png" alt="Logo">
+    <h1>Kintab</h1>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-item active">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/53f365cc-4293-4325-829f-925ed40f5a6e.jfif" alt="Dishwashing Liquid">
+      <div class="hero-content">
+        <h2>Gentle on hands, tough on grease.</h2>
+        <h3>₱99 only (500ml)</h3>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="hero-item">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/dd51d414-59b0-4db6-a7fe-2c8c03931131.jfif" alt="Hand Soap">
+      <div class="hero-content">
+        <h2>Moisturizing and antibacterial.</h2>
+        <h3>₱85 only (250ml)</h3>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="hero-item">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/b6861f85-100b-4508-ab2e-93911155ad54.jfif" alt="Multi Cleaner">
+      <div class="hero-content">
+        <h2>All-purpose cleaning power for every surface.</h2>
+        <h3>₱120 only (500ml)</h3>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="products" id="products">
+  <h2>Our Products</h2>
+  <div class="product-container">
+    <div class="product">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/53f365cc-4293-4325-829f-925ed40f5a6e.jfif" alt="Dishwashing">
+      <h3>EcoClean Dishwashing Liquid</h3>
+      <p>Cuts through oil, cares for your skin. Experience the power of calamansi!</p>
+      <h4>₱99</h4>
+    </div>
+    <div class="product">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/dd51d414-59b0-4db6-a7fe-2c8c03931131.jfif" alt="Hand Soap">
+      <h3>SoftGlow Hand Soap</h3>
+      <p>Moisturizing and antibacterial.</p>
+      <h4>₱85</h4>
+    </div>
+    <div class="product">
+      <img src="https://uploads.onecompiler.io/43v5nyjh9/442d98qgw/b6861f85-100b-4508-ab2e-93911155ad54.jfif" alt="Multi Cleaner">
+      <h3>GreenClean Multi Cleaner</h3>
+      <p>All-purpose cleaning power for every surface.</p>
+      <h4>₱120</h4>
+    </div>
+  </div>
+</section>
+
+<section class="About" id="about">
+  <h2>About Us</h2>
+  <p>We are 2 passionate developers creating eco-friendly cleaning product websites. Follow us on Facebook!</p>
+  <div class="team">
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Developer 1">
+      <h4>Developer 1</h4>
+      <p>Taguig City, Philippines</p>
+      <p><a href="#">FB Profile</a></p>
+    </div>
+    <div class="team-member">
+      <img src="https://via.placeholder.com/100" alt="Developer 2">
+      <h4>Developer 2</h4>
+      <p>Taguig City, Philippines</p>
+      <p><a href="#">FB Profile</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="Service" id="service">
+  <h2>Services</h2>
+  <p>We develop custom web solutions for clients with care and precision.</p>
+
+  <div class="client-cards">
+    <div class="client-card">
+      <img src="client1.jpg" alt="Client Photo">
+      <h3>Juan Dela Cruz</h3>
+      <p class="testimonial">"We chose these developers because they delivered exactly what we envisioned, on time and with great attention to detail."</p>
+    </div>
+  </div>
+  
+  <div class="why-choose-us">
+    <h3>Why they chose us</h3>
+    <ul>
+      <li>Fast and reliable development</li>
+      <li>Custom solutions tailored to their needs</li>
+      <li>Clear communication and support</li>
+      <li>Creative problem solving</li>
+    </ul>
+  </div>
+</section>
+
+<section class="Contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>0912-345-6789</p>
+  <p>sabon@denis.com</p>
+  <p>Taguig City, Philippines</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kintab | Made with care for your home and planet</p>
+</footer>
+
+
+
+<script>
+  const slides = document.querySelectorAll('.hero-item');
+  let currentSlide = 0;
+  const slideInterval = 4000; // 4 seconds#
+
+  function showNextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(showNextSlide, slideInterval);
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
