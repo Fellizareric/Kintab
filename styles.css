@@ -390,67 +390,41 @@ footer {
   color: #b3e5fc;
   font-size: 0.9rem;
   margin-bottom: 10px;
-  }.client-card h3 { color: #4fc3f7; margin-bottom: 10px; }
-.testimonial { font-size: 14px; color: #e1f5fe; }
-
-.why-choose-us { margin-top: 50px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; }
-.why-choose-us h3 { color: #80deea; margin-bottom: 15px; }
-.why-choose-us ul { list-style: disc; padding-left: 20px; color: #b3e5fc; font-size: 16px; }
-
-footer { text-align: center; background: #0d1b2a; color: #80deea; padding: 20px 0; }
-
-/* ===== MEDIA QUERIES ===== */
-@media (max-width: 600px) {
-  header { flex-direction: column; align-items: flex-start; padding: 10px 20px; }
-  nav { flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
-  nav a { font-size: 14px; }
-  .hero { flex-direction: column; padding: 100px 10px 40px; text-align: center; }
-  .hero-item img { max-width: 80%; margin: 0 auto 15px; }
-  .hero-content { text-align: center; }
-  .hero-content h2 { font-size: 26px; }
-  .hero-content h3 { font-size: 18px; }
-  .product-container { flex-direction: column; align-items: center; }
-  .product { width: 90%; margin-bottom: 20px; }
-  .team, .client-cards { flex-direction: column; align-items: center; }
-  .why-choose-us { text-align: center; padding: 0 15px; }
 }
 
-@media (min-width: 601px) and (max-width: 992px) {
-  header { padding: 15px 30px; }
-  nav { gap: 15px; }
-  .hero-item img { max-width: 250px; }
-  .hero-content h2 { font-size: 30px; }
-  .hero-content h3 { font-size: 20px; }
-  .product-container { flex-wrap: wrap; justify-content: center; }
-  .product { flex: 1 1 45%; margin: 10px; }
-}
-
-@media (min-width: 993px) {
-  .hero-content h2 { font-size: 36px; }
-  .hero-content h3 { font-size: 24px; }
-              }.choose-item { background:#1a2639; border-radius:10px; padding:20px; flex:1; min-width:200px; text-align:center; }
-.choose-item h3 { color:#80deea; margin-bottom:10px; }
-.rating { display:flex; justify-content:center; gap:5px; margin-top:10px; }
-.rating img { width:30px; height:30px; border-radius:50%; }
-
-.Contact { background:#0d1b2a; color:#b3e5fc; padding:60px 5%; border-radius:10px; margin:60px 0; }
-.Contact h2 { font-size:28px; margin-bottom:20px; }
-.Contact p { margin-bottom:10px; font-size:18px; }
-
-.client-cards { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-.client-card { background-color: #1a2639; padding: 20px; border-radius: 15px; max-width: 250px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-.client-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid #00bcd4; }
-.client-card h3 { color: #4fc3f7; margin-bottom: 10px; }
-.testimonial { font-size: 14px; color: #e1f5fe; }
-
-.why-choose-us { margin-top: 50px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; }
-.why-choose-us h3 { color: #80deea; margin-bottom: 15px; }
-.why-choose-us ul { list-style: disc; padding-left: 20px; color: #b3e5fc; font-size: 16px; }
-
-.hero-container { position: relative; overflow: hidden; height: 400px; display: flex; }
-.hero-item { position: absolute; top: 0; left: 0; width: 100%; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 1s ease-in-out; }
-.hero-item.active { opacity: 1; position: relative; }
-.hero-item img { max-width:350px; border-radius:20px; box-shadow:0 6px 18px rgba(0,0,0,0.5); margin-right:20px; }
-.hero-content { max-width:500px; text-align:left; }
-
-footer { text-align:center; background:#0d1b2a; color:#80dee
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  header {
+    padding: 8px 10px;
+  }
+  .menu-icon {
+    left: 10px;
+    font-size: 24px;
+  }
+  .logo {
+    gap: 6px;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
+  .hero-img img {
+    width: 180px;
+  }
+  .hero-text h3 {
+    font-size: 1.5rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .product-container, .service-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .developer {
+    width: 200px;
+  }
+  }
